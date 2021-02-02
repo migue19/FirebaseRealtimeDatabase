@@ -3,10 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D829D6F1158B3FD8225C325 /* Pods_FirebaseRealtimeDatabase.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E5B03D43393F6780FF7E1D2D /* Pods_FirebaseRealtimeDatabase.framework */; };
+		F24D74F925C8DA0C000D15FA /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = F24D74F825C8DA0C000D15FA /* GoogleService-Info.plist */; };
 		F2C37F2425C8BBBC002E72AB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C37F2325C8BBBC002E72AB /* AppDelegate.swift */; };
 		F2C37F2625C8BBBC002E72AB /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C37F2525C8BBBC002E72AB /* SceneDelegate.swift */; };
 		F2C37F2825C8BBBC002E72AB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2C37F2725C8BBBC002E72AB /* ViewController.swift */; };
@@ -16,6 +18,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		721A9E44FA1EFFDDA3ECEF96 /* Pods-FirebaseRealtimeDatabase.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseRealtimeDatabase.release.xcconfig"; path = "Target Support Files/Pods-FirebaseRealtimeDatabase/Pods-FirebaseRealtimeDatabase.release.xcconfig"; sourceTree = "<group>"; };
+		7722B1C62D21B983736C9642 /* Pods-FirebaseRealtimeDatabase.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseRealtimeDatabase.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseRealtimeDatabase/Pods-FirebaseRealtimeDatabase.debug.xcconfig"; sourceTree = "<group>"; };
+		E5B03D43393F6780FF7E1D2D /* Pods_FirebaseRealtimeDatabase.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseRealtimeDatabase.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F24D74F825C8DA0C000D15FA /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F2C37F2025C8BBBC002E72AB /* FirebaseRealtimeDatabase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FirebaseRealtimeDatabase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C37F2325C8BBBC002E72AB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F2C37F2525C8BBBC002E72AB /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -31,17 +37,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D829D6F1158B3FD8225C325 /* Pods_FirebaseRealtimeDatabase.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		25429C3C2DAF27E7870D33FF /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7722B1C62D21B983736C9642 /* Pods-FirebaseRealtimeDatabase.debug.xcconfig */,
+				721A9E44FA1EFFDDA3ECEF96 /* Pods-FirebaseRealtimeDatabase.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		50EEC0655FD33C326F965E3C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E5B03D43393F6780FF7E1D2D /* Pods_FirebaseRealtimeDatabase.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		F2C37F1725C8BBBC002E72AB = {
 			isa = PBXGroup;
 			children = (
 				F2C37F2225C8BBBC002E72AB /* FirebaseRealtimeDatabase */,
 				F2C37F2125C8BBBC002E72AB /* Products */,
+				25429C3C2DAF27E7870D33FF /* Pods */,
+				50EEC0655FD33C326F965E3C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +82,7 @@
 		F2C37F2225C8BBBC002E72AB /* FirebaseRealtimeDatabase */ = {
 			isa = PBXGroup;
 			children = (
+				F24D74F825C8DA0C000D15FA /* GoogleService-Info.plist */,
 				F2C37F2325C8BBBC002E72AB /* AppDelegate.swift */,
 				F2C37F2525C8BBBC002E72AB /* SceneDelegate.swift */,
 				F2C37F2725C8BBBC002E72AB /* ViewController.swift */,
@@ -74,9 +101,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F2C37F3425C8BBBC002E72AB /* Build configuration list for PBXNativeTarget "FirebaseRealtimeDatabase" */;
 			buildPhases = (
+				5CAF1AA968796C311453A612 /* [CP] Check Pods Manifest.lock */,
 				F2C37F1C25C8BBBC002E72AB /* Sources */,
 				F2C37F1D25C8BBBC002E72AB /* Frameworks */,
 				F2C37F1E25C8BBBC002E72AB /* Resources */,
+				54270B5489DB824FC4089670 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -125,12 +154,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				F2C37F3025C8BBBC002E72AB /* LaunchScreen.storyboard in Resources */,
+				F24D74F925C8DA0C000D15FA /* GoogleService-Info.plist in Resources */,
 				F2C37F2D25C8BBBC002E72AB /* Assets.xcassets in Resources */,
 				F2C37F2B25C8BBBC002E72AB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		54270B5489DB824FC4089670 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebaseRealtimeDatabase/Pods-FirebaseRealtimeDatabase-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-FirebaseRealtimeDatabase/Pods-FirebaseRealtimeDatabase-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirebaseRealtimeDatabase/Pods-FirebaseRealtimeDatabase-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		5CAF1AA968796C311453A612 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-FirebaseRealtimeDatabase-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		F2C37F1C25C8BBBC002E72AB /* Sources */ = {
@@ -283,6 +355,7 @@
 		};
 		F2C37F3525C8BBBC002E72AB /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7722B1C62D21B983736C9642 /* Pods-FirebaseRealtimeDatabase.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +375,7 @@
 		};
 		F2C37F3625C8BBBC002E72AB /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 721A9E44FA1EFFDDA3ECEF96 /* Pods-FirebaseRealtimeDatabase.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
